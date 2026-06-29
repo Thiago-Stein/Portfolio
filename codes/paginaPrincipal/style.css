@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 0 24px;
+  font-family: Arial, sans-serif;
+  background: #585454;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+#github:hover {
+  background: #4c0063;
+}
+
+#linkedin:hover {
+  background: #00579e;
+}
+
+#whatsapp:hover {
+  background: #9dff00;
+}
+
+#projetos:hover {
+  background: #00a4aa;
+}
+
+#curriculo:hover {
+  background: #009e9e;
+}
+
+.Thiago {
+  width: min(90%, 640px);
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  padding: 0 16px;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.topo{  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#cardQuemSou{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(163, 163, 163);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(35, 153, 31, 0.692);
+  max-width: 1000px;
+  margin: 50px auto;
+  background-color: #080024;
+}
+
+.conteudoQuemSou{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.textoQuemSou{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.escritaQuemSou{
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: white;
+  transform: translateY(-40px);
+}
+
+#tituloQuemSou{
+  color: rgb(0, 146, 127);
+}
+
+#tituloQuemSou:hover{
+  color: rgb(0, 255, 170);
+}
+
+.escritaQuemSou{
+  color: white;
+}
+
+@keyframes flutuar {
+  0% { transform: translateY(-30px); }
+  50% { transform: translateY(-40px); }
+  100% { transform: translateY(-30px); }
+}
+
+#fotoPerfil{
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  margin-right: 30px;
+  transform: translateY(-30px);
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+#containerEnviarEmail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(163, 163, 163);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(35, 153, 31, 0.692);
+  max-width: 1000px;
+  margin: 50px auto;
+  background-color: #4b0023;
+}
+
+.textoParaEmail{
+  font-size: 18px;
+  font-weight: bold;
+  color: #9ee0dd;
+  margin-bottom: 8px;
+}
+
+#mandarEmail{
+  height: 20px;
+  width: 360px;
+}
+
+#escreverEmail{
+  font-size: 16px;
+}
+
+#mandarEmail, #escreverEmail{
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#enviarEmail{
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#enviarEmail:hover{
+  background-color: #45a049;
+}
+
+#creditos{
+  color: white;
+}
+
+#creditos:hover{
+  color: rgb(102, 255, 0);
+}
+
+@media (max-width: 768px) {
+
+  .Thiago h1 {
+    font-size: 2rem;
+  }
+
+  .conteudoQuemSou {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #fotoPerfil {
+    margin-right: 0;
+    margin-bottom: 20px;
+    align-self: center;
+  }
+
+  .textoQuemSou {
+    align-items: center;
+  }
+
+  #mandarEmail, #escreverEmail {
+    width: 100%;
+  }
+
+  #enviarEmail {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

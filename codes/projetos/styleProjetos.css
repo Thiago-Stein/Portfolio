@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #f2f5fb;
+    color: #1f2937;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding: 32px 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+#github:hover {
+    background: #4c0063;
+}
+
+#linkedin:hover {
+    background: #00579e;
+}
+
+#whatsapp:hover {
+    background: #9dff00;
+}
+
+#curriculo:hover {
+    background: #aaa700;
+}
+
+#paginaPrincipal:hover {
+    background: #009e9e;
+}
+
+
+h1 {
+    margin: 0 0 24px;
+    font-size: clamp(2rem, 3vw, 3rem);
+    letter-spacing: -0.04em;
+    text-align: center;
+}
+
+.cardProjetos {
+    width: min(100%, 920px);
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 18px 50px rgba(15, 23, 42, 0.12);
+    overflow: hidden;
+}
+
+.cardProjetos a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.cardProjetos img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.conteudoDoProjeto {
+    padding: 28px 32px;
+}
+
+.conteudoDoProjeto h2 {
+    margin: 0 0 16px;
+    font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+}
+
+.conteudoDoProjeto p {
+    margin: 0;
+    line-height: 1.75;
+    color: #475569;
+}
+
+.aviso {
+    display: inline-block;
+    margin-top: 22px;
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.aviso:hover {
+    color: #1d4ed8;
+}
+
+#creditos{
+    color: white;
+}
+
+#creditos:hover{
+    color: rgb(102, 255, 0);
+}
+
+@media (max-width: 768px) {
+    .conteudoDoProjeto {
+        padding: 20px 16px;
+    }
+
+    .links {
+        gap: 10px;
+    }
+
+    .links a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}

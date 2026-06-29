@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>siThiago</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../images/siteIcon.png" type="image/jpg">
+  </head>
+
+  <body>
+
+    <header>
+        <nav>
+          <div class="links">
+            <a href="https://www.linkedin.com/in/thiago-gomes-stein-31649a35b/" target="_blank" id = "linkedin" >LinkedIn</a>
+            <a href="https://github.com/Thiago-Stein" target="_blank" id = "github" >GitHub</a>
+            <a href="https://wa.me/5543999915412" target="_blank" id = "whatsapp" >  Entrar em contato via WhatsApp </a>
+            <a href="../projetos/projetos.html" target="_self" id = "projetos" > Projetos </a>
+            <a href="../curriculo/curriculo.html" target="_self" id = "curriculo" > Meu currículo </a>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+      <div id ="Thiago">
+        <h1 class = "topo">Thiago Gomes Stein</h1>
+          <p class = "topo">Desenvolvedor de Software focado em desenvolvimento backend</p>
+      </div>
+      
+      <div id="cardQuemSou">
+        <h2 id = "tituloQuemSou">Quem sou eu?</h2>
+          
+          <div class = "conteudoQuemSou">
+            <img src ="../images/fotoPerfil.jpeg" alt = "Foto de perfil do Thiago Gomes Stein" id = "fotoPerfil">
+              <div class = "textoQuemSou">
+                <p class = "escritaQuemSou">Sou estudante da UniFil, no curso de Engenharia de Software (Terceiro periodo).</p>
+                <p class = "escritaQuemSou">Comecei os estudos de programação ao passo em que entrei na faculdade,e desde então tenho me dedicado a entender mais sobre o mundo de programação e técnologia.</p>
+                <p class = "escritaQuemSou">Meus interesses principais são as linguagens voltadas ao backend (Principalmente Java e atualmente PhP com Laravel).</p>
+              </div>
+          </div>
+      </div>
+
+      <div id = "containerEnviarEmail">
+        <form>
+          <label class="textoParaEmail">Entre em contato comigo!</label><br>
+          
+          <label class="textoParaEmail">Digite aqui o seu email:</label>
+          <input type="email" name="emailRemetente" id="mandarEmail" required/> <br>
+          
+          <label class="textoParaEmail">Digite aqui a sua mensagem:</label><br>
+          <textarea name="mensagem" rows="8" cols="90" id = "escreverEmail"></textarea>
+
+          <br><button type="submit" id ="enviarEmail">Enviar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p id = "creditos">&copy; 2026 Thiago Gomes Stein.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
