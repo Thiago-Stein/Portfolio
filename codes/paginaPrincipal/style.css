@@ -29,6 +29,18 @@ body {
   transition: background 0.2s ease;
 }
 
+#paginaAtual {
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #228115;
+    color: #fff;
+    text-decoration: none;
+}
+
+#paginaAtual:hover {
+    background: #009e9e;
+}
+
 #github:hover {
   background: #4c0063;
 }
@@ -46,7 +58,7 @@ body {
 }
 
 #curriculo:hover {
-  background: #009e9e;
+  background: #aaa700;
 }
 
 .Thiago {
